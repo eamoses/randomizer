@@ -2,11 +2,11 @@ const url = 'https://script.google.com/macros/s/AKfycbxR4KrHZVka7by0IXuYdu8Qk83q
 
 var _gas = new GAS(url)
 window.onload = () => {
-    const response = prompt("Enter password: ");
+    // const response = prompt("Enter password: ");
     _gas.crud('READ', 'row', 
         {
             sheetName: 'Browser Created Sheet',
-            _Id: response
+            _Id: 'ilovecheese'
         }
         ).then( payload => {
             arrayManipulator(payload);
